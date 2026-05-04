@@ -1,0 +1,22 @@
+{
+  "name": "justbid-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "mobile:build": "rm -rf dist && mkdir -p dist/js && cp src/index.html dist/index.html && cp src/js/justbid-inject.js dist/js/justbid-inject.js",
+    "mobile:sync": "npm run mobile:build && npx cap sync",
+    "check": "node --check src/js/justbid-inject.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/cli": "^8.3.1",
+    "@capacitor/core": "^8.3.1",
+    "@capacitor/ios": "^8.3.1"
+  }
+}
