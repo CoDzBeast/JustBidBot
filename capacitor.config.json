@@ -1,0 +1,11 @@
+{
+  "appId": "com.lilzac.justbid",
+  "appName": "JustBidBot",
+  "webDir": "dist",
+  "server": {
+    "allowNavigation": [
+      "justbid.com",
+      "*.justbid.com"
+    ]
+  }
+}
